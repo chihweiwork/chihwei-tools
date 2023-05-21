@@ -62,6 +62,7 @@ class ACTION:
         print(f'Active Memory:\t\t {self.transform(self.vmStats["Pages active"]):.3f} {self.unit} \t{self.vmStats["Pages active"]/total_memory:.3f}%')
         print(f'Inactive Memory:\t {self.transform(self.vmStats["Pages inactive"]):.3f} {self.unit} \t{self.vmStats["Pages inactive"]/total_memory:.3f}%')
         print(f'Free Memory:\t\t {self.transform(self.vmStats["Pages free"]):.3f} {self.unit} \t{self.vmStats["Pages free"]/total_memory:.3f}%')
+        print('=======================================================')
         print('Real Mem Total (ps):\t {0:.3f} {1}'.format(self.transform(self.rssTotal), self.unit))
         print(f'Total Memory:\t\t {self.transform(total_memory):.3f} {self.unit}')
         
